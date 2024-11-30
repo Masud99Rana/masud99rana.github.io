@@ -9,11 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        /* Add some smooth scroll behavior */
         html {
             scroll-behavior: smooth;
         }
-        /* Animation for section fade in */
         .fadeIn {
             animation: fadeIn 1.5s ease-out;
         }
@@ -37,6 +35,7 @@
                 <div class="space-x-4 text-white">
                     <a href="#about" class="hover:text-indigo-300">About</a>
                     <a href="#skills" class="hover:text-indigo-300">Skills</a>
+                    <a href="#workflow" class="hover:text-indigo-300">My Workflow</a>
                     <a href="#projects" class="hover:text-indigo-300">Projects</a>
                     <a href="#contact" class="hover:text-indigo-300">Contact</a>
                 </div>
@@ -52,32 +51,70 @@
         <a href="#contact" class="mt-6 inline-block bg-white text-gray-800 px-8 py-3 rounded-full text-lg hover:bg-indigo-600 hover:text-white transition">Get in Touch</a>
     </header>
 
-    <!-- About Section -->
+    <!-- About Me Section -->
     <section id="about" class="py-20 bg-white text-center fadeIn">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-semibold text-gray-800">About Me</h2>
-            <p class="mt-4 text-lg text-gray-600">I'm a passionate Software Engineer with 5 years of experience, specializing in full-stack development. I am skilled in technologies like Node.js, Laravel, and more. I love solving problems and delivering high-quality software solutions. Currently, I'm working at Antooba Technologies Ltd, where I design and implement scalable systems and APIs.</p>
+            <p class="mt-4 text-lg text-gray-600">I'm a passionate Software Engineer with 5+ years of experience, specializing in full-stack development. My expertise spans Node.js, Laravel, MongoDB, and various modern technologies. I focus on delivering scalable and high-performance solutions while continuously evolving my skill set. Currently, I'm helping businesses enhance their digital presence by building robust, real-time web applications.</p>
+            <p class="mt-4 text-lg text-gray-600">I believe in creating a positive user experience, writing clean code, and collaborating with teams to bring innovative ideas to life. I'm always excited to take on new challenges and leverage my skills to build meaningful solutions.</p>
         </div>
     </section>
 
-    <!-- Skills Section with Animation -->
-    <section id="skills" class="py-20 bg-gray-100 text-center fadeIn">
+    <!-- My Work Flow Section -->
+    <section id="workflow" class="py-20 bg-gray-100 text-center fadeIn">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-semibold text-gray-800">My Work Flow</h2>
+            <p class="mt-4 text-lg text-gray-600">I approach each project systematically to ensure quality and efficiency at every step:</p>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-indigo-500 hover:text-white transition">
+                    <h3 class="text-xl font-semibold">1. Planning</h3>
+                    <p class="mt-2 text-gray-600">Understand the client's needs and project scope. Create detailed project plans with clear objectives and deadlines.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-indigo-500 hover:text-white transition">
+                    <h3 class="text-xl font-semibold">2. Design</h3>
+                    <p class="mt-2 text-gray-600">Create wireframes and mockups to visualize the user interface and experience. Iteratively improve designs based on feedback.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-indigo-500 hover:text-white transition">
+                    <h3 class="text-xl font-semibold">3. Development</h3>
+                    <p class="mt-2 text-gray-600">Implement the application using modern technologies, focusing on scalability, security, and performance.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-indigo-500 hover:text-white transition">
+                    <h3 class="text-xl font-semibold">4. Testing</h3>
+                    <p class="mt-2 text-gray-600">Thoroughly test the product for bugs, user experience, and security. Iterate and improve based on test results.</p>
+                </div>
+                <!-- Step 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-indigo-500 hover:text-white transition">
+                    <h3 class="text-xl font-semibold">5. Deployment</h3>
+                    <p class="mt-2 text-gray-600">Deploy the application with monitoring tools, ensuring smooth functionality in production. Provide support and maintenance as needed.</p>
+                </div>
+                <!-- Step 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-indigo-500 hover:text-white transition">
+                    <h3 class="text-xl font-semibold">6. Feedback</h3>
+                    <p class="mt-2 text-gray-600">Collect user feedback for future improvements and updates to enhance the product over time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with Chart -->
+    <section id="skills" class="py-20 bg-white text-center fadeIn">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-semibold text-gray-800">Skills & Technologies</h2>
-            <p class="mt-4 text-lg text-gray-600">Here are the technologies I'm skilled in:</p>
+            <p class="mt-4 text-lg text-gray-600">Here are the technologies I use to build robust, scalable applications:</p>
             <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Skill 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg transition hover:scale-105">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/node-dot-js.svg" alt="Node.js" class="w-16 h-16 mx-auto"/>
                     <h4 class="mt-2 text-xl font-medium">Node.js</h4>
                 </div>
-                <!-- Skill 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg transition hover:scale-105">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/laravel.svg" alt="Laravel" class="w-16 h-16 mx-auto"/>
                     <h4 class="mt-2 text-xl font-medium">Laravel</h4>
                 </div>
-                <!-- Skill 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg transition hover:scale-105">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/javascript.svg" alt="JavaScript" class="w-16 h-16 mx-auto"/>
                     <h4 class="mt-2 text-xl font-medium">JavaScript</h4>
                 </div>
@@ -88,71 +125,33 @@
         </div>
     </section>
 
-    <!-- Chart.js Script for Skills -->
+    <!-- Chart.js Script -->
     <script>
-        var ctx = document.getElementById('skillsChart').getContext('2d');
-        var skillsChart = new Chart(ctx, {
+        const ctx = document.getElementById('skillsChart').getContext('2d');
+        const skillsChart = new Chart(ctx, {
             type: 'radar',
             data: {
-                labels: ['Node.js', 'Laravel', 'JavaScript', 'React.js', 'PHP', 'Docker'],
+                labels: ['Node.js', 'Laravel', 'JavaScript', 'React', 'MongoDB', 'SQL'],
                 datasets: [{
-                    label: 'Skill Proficiency',
-                    data: [90, 85, 95, 80, 70, 60],
-                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                    borderColor: 'rgba(54, 162, 235, 1)',
-                    borderWidth: 1
+                    label: 'Proficiency',
+                    data: [95, 90, 85, 80, 75, 70],
+                    fill: true,
+                    backgroundColor: 'rgba(67, 56, 200, 0.2)',
+                    borderColor: 'rgba(67, 56, 200, 1)',
+                    pointBorderColor: 'rgba(67, 56, 200, 1)',
+                    pointBackgroundColor: 'rgba(67, 56, 200, 1)',
+                    pointBorderWidth: 1,
                 }]
             },
             options: {
                 scales: {
                     r: {
-                        angleLines: {
-                            display: true
-                        },
-                        suggestedMin: 0,
-                        suggestedMax: 100
+                        beginAtZero: true
                     }
                 }
             }
         });
     </script>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-white text-center fadeIn">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-semibold text-gray-800">My Projects</h2>
-            <p class="mt-4 text-lg text-gray-600">Here are some of the projects I've worked on. Each project reflects my passion for building scalable, high-quality software solutions.</p>
-            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-lg transition hover:scale-105">
-                    <h3 class="text-xl font-semibold text-gray-800">E-Commerce Platform</h3>
-                    <p class="mt-2 text-gray-600">Built a full-fledged e-commerce platform with Node.js and MongoDB, integrated with various payment gateways.</p>
-                    <a href="#" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800">View Project</a>
-                </div>
-                <!-- Project 2 -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-lg transition hover:scale-105">
-                    <h3 class="text-xl font-semibold text-gray-800">Real-time Chat App</h3>
-                    <p class="mt-2 text-gray-600">Developed a real-time chat application with Node.js and Socket.io for seamless communication.</p>
-                    <a href="#" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800">View Project</a>
-                </div>
-                <!-- Project 3 -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-lg transition hover:scale-105">
-                    <h3 class="text-xl font-semibold text-gray-800">Task Management System</h3>
-                    <p class="mt-2 text-gray-600">Created a task management system using React.js for the front end and Laravel for the back end.</p>
-                    <a href="#" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800">View Project</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-indigo-600 text-white text-center fadeIn">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-3xl font-semibold">Get in Touch</h2>
-            <p class="mt-4 text-lg">Feel free to reach out to me for collaboration, freelance work, or just to say hello!</p>
-            <a href="mailto:masud@example.com" class="mt-6 inline-block bg-white text-indigo-600 px-8 py-3 rounded-full text-lg hover:bg-indigo-700 hover:text-white transition">Email Me</a>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="py-6 bg-gray-900 text-white text-center">
