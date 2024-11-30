@@ -6,15 +6,34 @@
     <meta name="description" content="Md. Masud Rana's Portfolio - Software Engineer">
     <title>Md. Masud Rana | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Add some smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Animation for section fade in */
+        .fadeIn {
+            animation: fadeIn 1.5s ease-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-100 font-poppins text-gray-800">
 
     <!-- Navbar -->
-    <nav class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-md">
+    <nav class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="#" class="text-3xl font-semibold text-white">Md. Masud Rana</a>
+                <a href="#" class="text-3xl font-semibold text-white hover:text-indigo-300">Md. Masud Rana</a>
                 <div class="space-x-4 text-white">
                     <a href="#about" class="hover:text-indigo-300">About</a>
                     <a href="#skills" class="hover:text-indigo-300">Skills</a>
@@ -26,73 +45,98 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="bg-gradient-to-r from-purple-600 via-indigo-500 to-pink-600 text-white text-center py-24">
-        <h1 class="text-5xl font-bold">Hi, I'm Md. Masud Rana</h1>
+    <header class="bg-gradient-to-r from-purple-600 via-indigo-500 to-pink-600 text-white text-center py-24 fadeIn">
+        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Md. Masud Rana" class="w-32 h-32 mx-auto rounded-full shadow-lg border-4 border-white">
+        <h1 class="text-5xl font-bold mt-6">Hi, I'm Md. Masud Rana</h1>
         <p class="mt-4 text-lg">Full Stack Developer | Node.js & Laravel Expert</p>
         <a href="#contact" class="mt-6 inline-block bg-white text-gray-800 px-8 py-3 rounded-full text-lg hover:bg-indigo-600 hover:text-white transition">Get in Touch</a>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white text-center">
+    <section id="about" class="py-20 bg-white text-center fadeIn">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-semibold text-gray-800">About Me</h2>
             <p class="mt-4 text-lg text-gray-600">I'm a passionate Software Engineer with 5 years of experience, specializing in full-stack development. I am skilled in technologies like Node.js, Laravel, and more. I love solving problems and delivering high-quality software solutions. Currently, I'm working at Antooba Technologies Ltd, where I design and implement scalable systems and APIs.</p>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-100 text-center">
+    <!-- Skills Section with Animation -->
+    <section id="skills" class="py-20 bg-gray-100 text-center fadeIn">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-semibold text-gray-800">Skills & Technologies</h2>
-            <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-                <div class="skill-card">
+            <p class="mt-4 text-lg text-gray-600">Here are the technologies I'm skilled in:</p>
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg transition hover:scale-105">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/node-dot-js.svg" alt="Node.js" class="w-16 h-16 mx-auto"/>
                     <h4 class="mt-2 text-xl font-medium">Node.js</h4>
                 </div>
-                <div class="skill-card">
+                <!-- Skill 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg transition hover:scale-105">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/laravel.svg" alt="Laravel" class="w-16 h-16 mx-auto"/>
                     <h4 class="mt-2 text-xl font-medium">Laravel</h4>
                 </div>
-                <div class="skill-card">
+                <!-- Skill 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg transition hover:scale-105">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/javascript.svg" alt="JavaScript" class="w-16 h-16 mx-auto"/>
                     <h4 class="mt-2 text-xl font-medium">JavaScript</h4>
                 </div>
-                <div class="skill-card">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/react.svg" alt="React.js" class="w-16 h-16 mx-auto"/>
-                    <h4 class="mt-2 text-xl font-medium">React.js</h4>
-                </div>
-                <div class="skill-card">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/php.svg" alt="PHP" class="w-16 h-16 mx-auto"/>
-                    <h4 class="mt-2 text-xl font-medium">PHP</h4>
-                </div>
-                <div class="skill-card">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/docker.svg" alt="Docker" class="w-16 h-16 mx-auto"/>
-                    <h4 class="mt-2 text-xl font-medium">Docker</h4>
-                </div>
+            </div>
+            <div class="mt-8">
+                <canvas id="skillsChart" width="400" height="400"></canvas>
             </div>
         </div>
     </section>
 
+    <!-- Chart.js Script for Skills -->
+    <script>
+        var ctx = document.getElementById('skillsChart').getContext('2d');
+        var skillsChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Node.js', 'Laravel', 'JavaScript', 'React.js', 'PHP', 'Docker'],
+                datasets: [{
+                    label: 'Skill Proficiency',
+                    data: [90, 85, 95, 80, 70, 60],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    r: {
+                        angleLines: {
+                            display: true
+                        },
+                        suggestedMin: 0,
+                        suggestedMax: 100
+                    }
+                }
+            }
+        });
+    </script>
+
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-white text-center">
+    <section id="projects" class="py-20 bg-white text-center fadeIn">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl font-semibold text-gray-800">My Projects</h2>
             <p class="mt-4 text-lg text-gray-600">Here are some of the projects I've worked on. Each project reflects my passion for building scalable, high-quality software solutions.</p>
             <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project 1 -->
-                <div class="project-card bg-gray-100 p-6 rounded-lg shadow-lg">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg transition hover:scale-105">
                     <h3 class="text-xl font-semibold text-gray-800">E-Commerce Platform</h3>
                     <p class="mt-2 text-gray-600">Built a full-fledged e-commerce platform with Node.js and MongoDB, integrated with various payment gateways.</p>
                     <a href="#" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800">View Project</a>
                 </div>
                 <!-- Project 2 -->
-                <div class="project-card bg-gray-100 p-6 rounded-lg shadow-lg">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg transition hover:scale-105">
                     <h3 class="text-xl font-semibold text-gray-800">Real-time Chat App</h3>
                     <p class="mt-2 text-gray-600">Developed a real-time chat application with Node.js and Socket.io for seamless communication.</p>
                     <a href="#" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800">View Project</a>
                 </div>
                 <!-- Project 3 -->
-                <div class="project-card bg-gray-100 p-6 rounded-lg shadow-lg">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg transition hover:scale-105">
                     <h3 class="text-xl font-semibold text-gray-800">Task Management System</h3>
                     <p class="mt-2 text-gray-600">Created a task management system using React.js for the front end and Laravel for the back end.</p>
                     <a href="#" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800">View Project</a>
@@ -102,17 +146,17 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-indigo-600 text-white text-center">
+    <section id="contact" class="py-20 bg-indigo-600 text-white text-center fadeIn">
         <div class="max-w-3xl mx-auto">
             <h2 class="text-3xl font-semibold">Get in Touch</h2>
-            <p class="mt-4 text-lg">I'm always open to new opportunities and collaborations. Feel free to reach out to me through the contact form or directly via email.</p>
-            <a href="mailto:MasudRana799MR@gmail.com" class="mt-6 inline-block bg-white text-indigo-600 px-8 py-3 rounded-full text-lg hover:bg-indigo-800 hover:text-white transition">Email Me</a>
+            <p class="mt-4 text-lg">Feel free to reach out to me for collaboration, freelance work, or just to say hello!</p>
+            <a href="mailto:masud@example.com" class="mt-6 inline-block bg-white text-indigo-600 px-8 py-3 rounded-full text-lg hover:bg-indigo-700 hover:text-white transition">Email Me</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center py-6">
-        <p>&copy; 2024 Md. Masud Rana | All rights reserved</p>
+    <footer class="py-6 bg-gray-900 text-white text-center">
+        <p>&copy; 2024 Md. Masud Rana. All rights reserved.</p>
     </footer>
 
 </body>
