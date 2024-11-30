@@ -1,118 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Md. Masud Rana | Full Stack Developer Portfolio">
-    <title>Md. Masud Rana | Full Stack Developer</title>
+    <meta name="description" content="Md. Masud Rana's Portfolio - Software Engineer">
+    <title>Md. Masud Rana | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+<body class="bg-gray-100 font-poppins text-gray-800">
 
-<body class="bg-gray-900 text-white">
-
-    <!-- Header Section -->
-    <header class="fixed w-full bg-gray-800 shadow-lg py-4 z-10">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <nav>
-                <ul class="flex space-x-8">
-                    <li><a href="#about" class="text-lg hover:text-gray-400 transition">About</a></li>
-                    <li><a href="#skills" class="text-lg hover:text-gray-400 transition">Skills</a></li>
-                    <li><a href="#projects" class="text-lg hover:text-gray-400 transition">Projects</a></li>
-                    <li><a href="#contact" class="text-lg hover:text-gray-400 transition">Contact</a></li>
-                </ul>
-            </nav>
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-3xl font-semibold text-white">Md. Masud Rana</a>
+                <div class="space-x-4 text-white">
+                    <a href="#about" class="hover:text-indigo-300">About</a>
+                    <a href="#skills" class="hover:text-indigo-300">Skills</a>
+                    <a href="#projects" class="hover:text-indigo-300">Projects</a>
+                    <a href="#contact" class="hover:text-indigo-300">Contact</a>
+                </div>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="h-screen bg-gradient-to-r from-blue-500 to-indigo-700 flex items-center justify-center text-center">
-        <div class="text-white">
-            <h1 class="text-5xl font-bold mb-4">Md. Masud Rana</h1>
-            <p class="text-xl mb-6">🚀 Full Stack Developer | 🪄 Node.js & Laravel Specialist</p>
-            <a href="#contact" class="bg-yellow-500 text-gray-900 py-2 px-6 rounded-full hover:bg-yellow-400 transition">Get In Touch</a>
-        </div>
-    </section>
+    <header class="bg-gradient-to-r from-purple-600 via-indigo-500 to-pink-600 text-white text-center py-24">
+        <h1 class="text-5xl font-bold">Hi, I'm Md. Masud Rana</h1>
+        <p class="mt-4 text-lg">Full Stack Developer | Node.js & Laravel Expert</p>
+        <a href="#contact" class="mt-6 inline-block bg-white text-gray-800 px-8 py-3 rounded-full text-lg hover:bg-indigo-600 hover:text-white transition">Get in Touch</a>
+    </header>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-800">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold text-yellow-500 mb-6">About Me</h2>
-            <p class="text-xl">I am a passionate Software Engineer with 5 years of experience in building scalable, efficient systems. Specializing in full-stack development with expertise in Node.js and Laravel. Always looking for new opportunities to collaborate and innovate.</p>
+    <section id="about" class="py-20 bg-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-semibold text-gray-800">About Me</h2>
+            <p class="mt-4 text-lg text-gray-600">I'm a passionate Software Engineer with 5 years of experience, specializing in full-stack development. I am skilled in technologies like Node.js, Laravel, and more. I love solving problems and delivering high-quality software solutions. Currently, I'm working at Antooba Technologies Ltd, where I design and implement scalable systems and APIs.</p>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold text-yellow-500 mb-6">My Skills</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
-                <div class="flex flex-col items-center">
-                    <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js" class="mb-2">
-                    <p class="text-lg">Node.js</p>
+    <section id="skills" class="py-20 bg-gray-100 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-semibold text-gray-800">Skills & Technologies</h2>
+            <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/node-dot-js.svg" alt="Node.js" class="w-16 h-16 mx-auto"/>
+                    <h4 class="mt-2 text-xl font-medium">Node.js</h4>
                 </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://img.icons8.com/color/48/000000/laravel.png" alt="Laravel" class="mb-2">
-                    <p class="text-lg">Laravel</p>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/laravel.svg" alt="Laravel" class="w-16 h-16 mx-auto"/>
+                    <h4 class="mt-2 text-xl font-medium">Laravel</h4>
                 </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React" class="mb-2">
-                    <p class="text-lg">React.js</p>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/javascript.svg" alt="JavaScript" class="w-16 h-16 mx-auto"/>
+                    <h4 class="mt-2 text-xl font-medium">JavaScript</h4>
                 </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" class="mb-2">
-                    <p class="text-lg">JavaScript</p>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/react.svg" alt="React.js" class="w-16 h-16 mx-auto"/>
+                    <h4 class="mt-2 text-xl font-medium">React.js</h4>
                 </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://img.icons8.com/color/48/000000/mysql.png" alt="MySQL" class="mb-2">
-                    <p class="text-lg">MySQL</p>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/php.svg" alt="PHP" class="w-16 h-16 mx-auto"/>
+                    <h4 class="mt-2 text-xl font-medium">PHP</h4>
                 </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://img.icons8.com/color/48/000000/docker.png" alt="Docker" class="mb-2">
-                    <p class="text-lg">Docker</p>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/docker.svg" alt="Docker" class="w-16 h-16 mx-auto"/>
+                    <h4 class="mt-2 text-xl font-medium">Docker</h4>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-800">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold text-yellow-500 mb-6">Projects</h2>
-            <p class="text-xl mb-8">Here are some of the projects I've worked on:</p>
-            <!-- Add your project details here -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-700 p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold text-yellow-500">E-commerce Platform</h3>
-                    <p class="text-white mt-2">Developed a fully responsive e-commerce platform with payment integration.</p>
+    <section id="projects" class="py-20 bg-white text-center">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-semibold text-gray-800">My Projects</h2>
+            <p class="mt-4 text-lg text-gray-600">Here are some of the projects I've worked on. Each project reflects my passion for building scalable, high-quality software solutions.</p>
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800">E-Commerce Platform</h3>
+                    <p class="mt-2 text-gray-600">Built a full-fledged e-commerce platform with Node.js and MongoDB, integrated with various payment gateways.</p>
+                    <a href="#" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800">View Project</a>
                 </div>
-                <div class="bg-gray-700 p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold text-yellow-500">Chat Application</h3>
-                    <p class="text-white mt-2">Built a real-time chat app using Node.js and Socket.io.</p>
+                <!-- Project 2 -->
+                <div class="project-card bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800">Real-time Chat App</h3>
+                    <p class="mt-2 text-gray-600">Developed a real-time chat application with Node.js and Socket.io for seamless communication.</p>
+                    <a href="#" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800">View Project</a>
                 </div>
-                <div class="bg-gray-700 p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold text-yellow-500">Admin Dashboard</h3>
-                    <p class="text-white mt-2">Created an interactive dashboard for monitoring analytics and performance.</p>
+                <!-- Project 3 -->
+                <div class="project-card bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800">Task Management System</h3>
+                    <p class="mt-2 text-gray-600">Created a task management system using React.js for the front end and Laravel for the back end.</p>
+                    <a href="#" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800">View Project</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-900 text-center">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-bold text-yellow-500 mb-6">Contact Me</h2>
-            <p class="text-xl mb-6">Feel free to reach out for collaborations, job opportunities, or just to chat!</p>
-            <a href="mailto:MasudRana799MR@gmail.com" class="bg-yellow-500 text-gray-900 py-2 px-6 rounded-full hover:bg-yellow-400 transition">Email Me</a>
+    <section id="contact" class="py-20 bg-indigo-600 text-white text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-semibold">Get in Touch</h2>
+            <p class="mt-4 text-lg">I'm always open to new opportunities and collaborations. Feel free to reach out to me through the contact form or directly via email.</p>
+            <a href="mailto:MasudRana799MR@gmail.com" class="mt-6 inline-block bg-white text-indigo-600 px-8 py-3 rounded-full text-lg hover:bg-indigo-800 hover:text-white transition">Email Me</a>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="py-6 bg-gray-800 text-center">
-        <p class="text-white text-lg">Made with 💻 by Md. Masud Rana</p>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <p>&copy; 2024 Md. Masud Rana | All rights reserved</p>
     </footer>
 
 </body>
-
 </html>
